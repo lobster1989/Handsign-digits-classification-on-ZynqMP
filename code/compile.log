@@ -1,26 +1,0 @@
-+ vai_c_tensorflow2 --model ../output/quantized_model.h5 --arch /opt/vitis_ai/compiler/arch/DPUCZDX8G/ZCU102/arch.json --output_dir ../output --net_name customcnn
-[INFO] parse raw model     :  0%|          | 0/19 [00:00<?, ?it/s]                           [INFO] parse raw model     :100%|██████████| 19/19 [00:00<00:00, 7501.81it/s]                
-[INFO] infer shape (NHWC)  :  0%|          | 0/33 [00:00<?, ?it/s]                           [INFO] infer shape (NHWC)  :100%|██████████| 33/33 [00:00<00:00, 1467.43it/s]                
-[INFO] perform level-0 opt :  0%|          | 0/2 [00:00<?, ?it/s]                            [INFO] perform level-0 opt :100%|██████████| 2/2 [00:00<00:00, 248.58it/s]                   
-[INFO] perform level-1 opt :  0%|          | 0/2 [00:00<?, ?it/s]                            [INFO] perform level-1 opt :100%|██████████| 2/2 [00:00<00:00, 947.87it/s]                   
-[INFO] generate xmodel     :  0%|          | 0/33 [00:00<?, ?it/s]                           [INFO] generate xmodel     :100%|██████████| 33/33 [00:00<00:00, 2993.47it/s]                
-[INFO] Namespace(inputs_shape=None, layout='NHWC', model_files=['../output/quantized_model.h5'], model_type='tensorflow2', out_filename='/tmp/customcnn_org.xmodel', proto=None)
-[INFO] tensorflow2 model: /workspace/chao-proj/handsigndigits_end2end/output/quantized_model.h5
-[INFO] keras version: 2.4.0
-[INFO] Tensorflow Keras model type: functional
-[INFO] dump xmodel ...[INFO] dump xmodel: /tmp/customcnn_org.xmodel
-[UNILOG][INFO] The compiler log will be dumped at "/tmp/vitis-ai-user/log/xcompiler-20210929-105353-4245"
-[UNILOG][INFO] Target architecture: DPUCZDX8G_ISA0_B4096_MAX_BG2
-[UNILOG][INFO] Compile mode: dpu
-[UNILOG][INFO] Debug mode: function
-[UNILOG][INFO] Target architecture: DPUCZDX8G_ISA0_B4096_MAX_BG2
-[UNILOG][INFO] Graph name: customcnn_model, with op num: 53
-[UNILOG][INFO] Begin to compile...
-[UNILOG][INFO] Total device subgraph number 3, DPU subgraph number 1
-[UNILOG][INFO] Compile done.
-[UNILOG][INFO] The meta json is saved to "/workspace/chao-proj/handsigndigits_end2end/code/../output/meta.json"
-[UNILOG][INFO] The compiled xmodel is saved to "/workspace/chao-proj/handsigndigits_end2end/code/../output/customcnn.xmodel"
-[UNILOG][INFO] The compiled xmodel's md5sum is caaa82d719426fd5f2be23265c54a532, and been saved to "/workspace/chao-proj/handsigndigits_end2end/code/../output/md5sum.txt"
-**************************************************
-* VITIS_AI Compilation - Xilinx Inc.
-**************************************************
