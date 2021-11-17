@@ -146,8 +146,8 @@ def app(image_dir,threads,model):
     wrong = 0
     for i in range(len(out_q)):
         prediction = classes[out_q[i]]
-        _, ground_truth = (listimage[i].split('_',1))[0]
-        if (ground_truth==prediction):
+        _, ground_truth = listimage[i].split('_',1)
+        if (ground_truth[0]==prediction):
             correct += 1
         else:
             wrong += 1
