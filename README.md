@@ -3,6 +3,8 @@
 ## Get the dataset
 https://github.com/ardamavi/Sign-Language-Digits-Dataset
 
+![image](https://github.com/lobster1989/Handsign-digits-classification-on-ZynqMP/blob/master/pictures/image2021-10-20_17-56-48.png)
+
 ## Source files
 My source files for this project are kept here at Github,
 
@@ -14,6 +16,8 @@ code: all source codes are included here, including scripts for training/quantiz
 output: generated model files.
 Sign-Language-Digits-Dataset: dataset should be putted here.
 target_zcu102_zcu104_kv260: files prepared to be copied to target board.
+
+![image](https://github.com/lobster1989/Handsign-digits-classification-on-ZynqMP/blob/master/pictures/image2021-11-15_18-35-57.png)
 
 ## Steps on host machine
 ### Setup Docker environment
@@ -234,6 +238,8 @@ Epoch 10/10
 ```
 
 Learning curve as below,
+
+![image](https://github.com/lobster1989/Handsign-digits-classification-on-ZynqMP/blob/master/pictures/image2021-11-15_18-55-59.png)
 
 #### Quantize the model
 Run "python3 quantize.py".
@@ -506,6 +512,8 @@ MODEL COMPILED
 ```
 
 After all steps on host machine finished, copy below files to target repository.
+
+![image](https://github.com/lobster1989/Handsign-digits-classification-on-ZynqMP/blob/master/pictures/image2021-11-16_10-21-31.png)
 
 If you are using Xilinx zcu102/zcu104/KV260 official vitis-ai image, the DPU configurations are the same on all 3 boards.  There files can be deployed on each of the 3 boards.
 
